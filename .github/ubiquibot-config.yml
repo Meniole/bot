@@ -12,7 +12,7 @@ plugins:
     - uses:
       - plugin: gentlementlegen/conversation-rewards@feat/permit-generation
         type: github
-        with:
+        with: ""
 incentives:
   enabled: true
   contentEvaluator:
