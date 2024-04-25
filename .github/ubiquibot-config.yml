@@ -11,6 +11,7 @@ plugins:
   'issues.closed':
     - uses:
       - plugin: gentlementlegen/conversation-rewards@feat/permit-generation
+        type: github
 incentives:
   enabled: true
   contentEvaluator:
