@@ -13,7 +13,7 @@ plugins:
       - plugin: Meniole/conversation-rewards@main
         type: github
         with:
-          issueUrl: ""
+          evmNetworkId: 100
 incentives:
   enabled: true
   contentEvaluator:
