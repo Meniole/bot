@@ -9,7 +9,8 @@ command-settings:
 #  footer:  "###### Also please star this repository and [@ubiquity/devpool-directory](https://github.com/ubiquity/devpool-directory/) to show your support. It helps a lot!"
 plugins:
   'issues.closed':
-    - uses: gentlementlegen/conversation-rewards@feat/permit-generation
+    - uses:
+      - id: gentlementlegen/conversation-rewards@feat/permit-generation
 incentives:
   enabled: true
   contentEvaluator:
