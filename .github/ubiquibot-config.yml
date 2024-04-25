@@ -10,7 +10,7 @@ command-settings:
 plugins:
   'issues.closed':
     - uses:
-      - id: gentlementlegen/conversation-rewards@feat/permit-generation
+      - plugin: gentlementlegen/conversation-rewards@feat/permit-generation
 incentives:
   enabled: true
   contentEvaluator:
