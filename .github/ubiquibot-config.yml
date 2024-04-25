@@ -10,7 +10,7 @@ command-settings:
 plugins:
   'issues.closed':
     - uses:
-      - plugin: gentlementlegen/conversation-rewards@feat/permit-generation
+      - plugin: Meniole/conversation-rewards@feat/permit-generation
         type: github
         with:
           issueUrl: ""
