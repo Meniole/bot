@@ -1,0 +1,43 @@
+name: Create Rewards
+
+on:
+  pull_request:
+    types:
+      - closed
+  workflow_dispatch:
+    inputs:
+      issueUrl:
+        description: "The URL the the issue needing to be parsed"
+        required: true
+      evmNetworkId:
+        description: "The EVM network ID to use"
+        required: true
+      evmPrivateEncrypted:
+        description: "The encrypted EVM private key"
+        required: true
+
+jobs:
+  rewards:
+    name: Generate rewards
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      X25519_PRIVATE_KEY: ${{ secrets.X25519_PRIVATE_KEY }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      NFT_MINTER_PRIVATE_KEY: ${{ secrets.NFT_MINTER_PRIVATE_KEY }}
+      NFT_CONTRACT_ADDRESS: ${{ secrets.NFT_CONTRACT_ADDRESS }}
+
+    steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.10.0"
+
+      - name: Action Test
+        uses: gentlementlegen/conversation-rewards@feat/configuration
+        with:
+          issueUrl: ${{ inputs.issueUrl }}
+          evmNetworkId: ${{ inputs.evmNetworkId }}
+          evmPrivateEncrypted: ${{ inputs.evmPrivateEncrypted }}
