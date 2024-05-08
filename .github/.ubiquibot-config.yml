@@ -1,4 +1,8 @@
 plugins:
+  '*':
+    - uses:
+      - plugin: Meniole/assistive-pricing@main
+        type: github
   'issues.closed':
     - uses:
       - plugin: Meniole/conversation-rewards@main
