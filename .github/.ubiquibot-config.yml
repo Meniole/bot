@@ -4,7 +4,6 @@ plugins:
       - plugin: Meniole/assistive-pricing@main
         type: github
         with:
-          defaultLabels:
           labels:
             time:
               - "Time: <1 Hour"
