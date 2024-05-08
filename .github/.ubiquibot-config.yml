@@ -7,7 +7,10 @@ plugins:
           defaultLabels:
             - "label 1"
           labels:
-            - "label 1"
+            time:
+              - "<1h"
+            priority:
+              - "1: Normal"
           basePriceMultiplier: 1
           publicAccessControl:
             setLabel: true
