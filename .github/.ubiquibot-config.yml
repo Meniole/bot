@@ -3,6 +3,15 @@ plugins:
     - uses:
       - plugin: Meniole/assistive-pricing@main
         type: github
+        with:
+          defaultLabels:
+            - "label 1"
+          labels:
+            - "label 1"
+          basePriceMultiplier: 1
+          publicAccessControl:
+            setLabel: true
+            fundExternalClosedIssue: false
   'issues.closed':
     - uses:
       - plugin: Meniole/conversation-rewards@main
