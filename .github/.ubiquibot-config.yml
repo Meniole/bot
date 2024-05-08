@@ -1,7 +1,7 @@
 plugins:
   'issues.closed':
     - uses:
-      - plugin: Meniole/conversation-rewards@main
+      - plugin: gentlementlegen/conversation-rewards@feat/configuration
         type: github
         with:
           evmNetworkId: 100
