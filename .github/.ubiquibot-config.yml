@@ -1,7 +1,7 @@
 plugins:
   'issue_comment.created':
     - uses:
-      - plugin: https://test.com
+      - plugin: https://ubiquibot-assistive-pricing.fernand-veyrier.workers.dev
         type: github
         with:
           testing: true
