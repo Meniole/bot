@@ -1,5 +1,5 @@
 plugins:
-  'issues.commented':
+  'issue_comment':
     - uses:
       - plugin: https://test.com
         type: github
