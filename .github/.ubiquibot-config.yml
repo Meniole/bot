@@ -1,4 +1,10 @@
 plugins:
+  'issues.commented':
+    - uses:
+      - plugin: https://test.com
+        type: github
+        with:
+          testing: true
   '*':
     - uses:
       - plugin: Meniole/assistive-pricing@main
