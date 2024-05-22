@@ -1,6 +1,11 @@
 plugins:
   '*':
     - uses:
+      - plugin: https://ubiquibot-assistive-pricing.fernand-veyrier.workers.dev
+        type: github
+        with:
+          testing: true
+    - uses:
       - plugin: Meniole/assistive-pricing@main
         type: github
         with:
