@@ -78,6 +78,11 @@ plugins:
         with:
           testing: true
     - uses:
+      - plugin: https://ubiquibot-command-query-user.fernand-veyrier.workers.dev
+        type: github
+        with:
+          allowPublicQuery: true
+    - uses:
       - plugin: Meniole/assistive-pricing@main
         type: github
         with:
