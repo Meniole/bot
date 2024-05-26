@@ -76,16 +76,6 @@ plugins:
       - plugin: https://ubiquibot-assistive-pricing.fernand-veyrier.workers.dev
         type: github
         with:
-          testing: true
-    - uses:
-      - plugin: https://ubiquibot-command-query-user.fernand-veyrier.workers.dev
-        type: github
-        with:
-          allowPublicQuery: true
-    - uses:
-      - plugin: Meniole/assistive-pricing@main
-        type: github
-        with:
           labels:
             time:
               - "Time: <1 Hour"
@@ -103,3 +93,8 @@ plugins:
           publicAccessControl:
             setLabel: true
             fundExternalClosedIssue: false
+    - uses:
+      - plugin: https://ubiquibot-command-query-user.fernand-veyrier.workers.dev
+        type: github
+        with:
+          allowPublicQuery: true
